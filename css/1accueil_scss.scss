@@ -1,0 +1,132 @@
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+    margin: 8px;
+    padding: 8px;
+  }
+  .accueil_left,
+  .accueil_right {
+    min-width: unset;
+    margin: 0 0 16px 0;
+    padding: 12px;
+  }
+}
+
+
+body {
+    font-family: "Nunito Sans";
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    background: #fff;
+    margin: 32px;
+    padding: 32px;
+}
+
+h3 {
+    border-bottom: 4px solid #1976f6;
+    padding-bottom: 6px;
+    margin-bottom: 18px;
+}
+
+
+
+.accueil_left {
+    flex: 1;
+    min-width: 250px;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.accueil_right {
+    flex: 2;
+    min-width: 300px;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.skill {
+    margin: 15px;
+}
+
+.skillname {
+margin-bottom: 5px;
+font-weight: 600;
+}
+
+.progress {
+    background: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 12px;
+}
+
+.progressbar_html {
+    height: 12px;
+    line-height: 12px;
+    color: white;
+    text-align: right;
+    padding-right: 5px;
+    border-radius: 10px;
+    width: 90%;
+    background: #e44d26;
+}
+
+.progressbar_css {
+    height: 12px;
+    line-height: 12px;
+    color: white;
+    text-align: right;
+    padding-right: 5px;
+    border-radius: 10px;
+    width: 80%;
+    background: #00bcd4;
+}
+
+.progressbar_js {
+    height: 12px;
+    line-height: 12px;
+    color: white;
+    text-align: right;
+    padding-right: 5px;
+    border-radius: 10px;
+    width: 70%;
+    background: #f0db4f;
+}
+
+.progressbar_php {
+    height: 12px;
+    line-height: 12px;
+    color: white;
+    text-align: right;
+    padding-right: 5px;
+    border-radius: 10px;
+    width: 60%;
+    background: #4caf50;
+}
+
+.progressbar_react {
+    height: 12px;
+    line-height: 12px;
+    color: white;
+    text-align: right;
+    padding-right: 5px;
+    border-radius: 10px;
+    width: 50%;
+    background: #2196f3;
+}
+
