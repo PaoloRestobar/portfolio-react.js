@@ -8,7 +8,8 @@
   
   <title>Portfolio John Doe</title>
 
-  <link href="./css/1accueil_scss.scss" rel="stylesheet">
+  <link href="./css/global.scss" rel="stylesheet">
+  <link href="./css/accueil.scss" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
@@ -16,26 +17,46 @@
 
 <body>
 
+      <nav>
+        <div class="navleft">John Doe</div>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="burger">
+        <span></span> 
+        <span></span> 
+        <span></span>
+        </label>
+
+        <ul class="navright">
+          <li> <a href="" class="pageactu">Home</a></li>
+          <li> <a href="">Services</a></li>
+          <li> <a href="">Portfolio</a></li>
+          <li> <a href="">Contact</a></li>
+          <li> <a href="">Mentions légales</a></li>
+        </ul>
+      </nav>
+    
   <header>
     <div class="headimg">
-      <img class="header1" src="./images/img_header.jpg" alt="image header">
-    </div>
-
-    <div>
       <h1>Bonjour, je suis John Doe</h1>
       <h2>Développeur web fullstack</h2>
+      <a href="./1accueil.html" class="savoirplus">En savoir plus</a>
     </div>
   </header>
 
   <main>
-    <section class="accueil_left">
-      <h3>A propos</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consequat gravida nisi, in lacinia est facilisis efficitur. Cras a tempus mauris, at luctus turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut nec bibendum dolor. Maecenas egestas facilisis turpis eget porta. Cras at laoreet massa. Vestibulum feugiat justo urna, quis consequat libero lacinia in.</p>
-        <p>Vestibulum non nibh et mi faucibus mollis sed a lectus. Proin a lorem vitae neque ullamcorper euismod. Vivamus interdum eros arcu, non dapibus lacus fermentum at. Mauris imperdiet tempor velit ac eleifend. Nullam eget lobortis tortor. Praesent quis maximus massa. Fusce id efficitur nunc. Duis efficitur lobortis bibendum. Curabitur volutpat velit id orci mattis, nec blandit nisl vehicula. Curabitur semper eros eu nibh facilisis, sed cursus metus sagittis. Duis pulvinar vitae arcu et commodo.</p>
-        <p>Donec pellentesque vitae sapien non posuere. Suspendisse interdum aliquam efficitur. Donec ut sollicitudin velit, id elementum odio. Nunc pharetra rhoncus ante nec consequat. Morbi porta vehicula neque eget congue. Vestibulum quam nulla, sollicitudin eget tempor vitae, interdum vitae massa. Mauris gravida luctus tincidunt. Integer consequat turpis sed urna mollis, laoreet molestie erat congue. Duis imperdiet, nisl sed cursus vulputate, risus ligula imperdiet felis, ac hendrerit diam quam eget mauris. Maecenas mollis, justo elementum hendrerit interdum, ligula risus mattis tortor, vel dignissim nunc leo luctus nisl. Nam vel sem et sapien lobortis aliquet sed sed nisi.</p>
-    </section>
 
-    <section class="accueil_right">
+    <section class="accueil_container">
+
+    <div class="accueil_left">
+      <h3>A propos</h3>
+        <img class="johnacc" src="./images/john_doe.jpg" alt="photo profil">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consequat gravida nisi, in lacinia est facilisis efficitur. Cras a tempus mauris, at luctus turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut nec bibendum dolor.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consequat gravida nisi, in lacinia est facilisis efficitur. Cras a tempus mauris, at luctus turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut nec bibendum dolor.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consequat gravida nisi, in lacinia est facilisis efficitur. Cras a tempus mauris, at luctus turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut nec bibendum dolor.</p>
+    </div>
+
+    <div class="accueil_right">
       <h3>Mes compétences</h3>
 
       <div class="skill">
@@ -73,11 +94,52 @@
           </div>
         </div>
 
+      </div>
+
     </section>
 
   </main>
 
-  <footer>
+  <footer class="footer">
+
+    <section class="footer-container">
+
+    <div class="footcol">
+      <h4>John Doe</h4>
+      <p>40 rue Laure Diebold</p>
+      <p>69009 Lyon, France</p>
+      <p>10 20 30 40 50</p>
+      <p>john.doe@gmail.com</p>
+
+      <a href="https://github.com/github-john-doe" class="alogo" target="_blank"><img class="logo" src="./images/github.png"></a>
+      <a href="https://x.com/?lang=fr" class="alogo" target="_blank"><img class="logo" src="./images/twitter.png"></a>
+      <a href="https://fr.linkedin.com/" class="alogo" target="_blank"><img class="logo" src="./images/linkedin.png"></a>
+    </div>
+
+    <div class="footcol">
+      <h4>Liens utiles</h4>
+      <ul>
+      <li><a href="">Accueil</a></li>
+      <li><a href="">Services</a></li>
+      <li><a href="">Portfolio</a></li>
+      <li><a href="">Me contacter</a></li>
+      <li><a href="">Mentions légales</a></li>
+      </ul>
+    </div>
+
+    <div class="footcol">
+      <h4>Mes dernières réalisations</h4>
+        <ul>
+          <li><a href="">Fresh Food</a></li>
+          <li><a href="">Restaurant Akira</a></li>
+          <li><a href="">Espace bien-être</a></li>
+          <li><a href="">SEO</a></li>
+          <li><a href="">Création d'une API</a></li>
+          <li><a href="">Maquette d'un site</a></li>
+        </ul>
+    </div>
+
+  </section>
 
   </footer>
 
